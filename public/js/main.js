@@ -21,7 +21,7 @@
     });
 
 
-    $('.validate-form .input100').each(function(){
+    $('.validate-form .input100').each(function(){ //Hides warning on respective input focus
         $(this).focus(function(){
            hideValidate(this);
         });

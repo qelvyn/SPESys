@@ -1,105 +1,129 @@
-
-
-
-
 /*//////////////////////////////////////////////////////////////////
 [ FONT ]*/
 
 @font-face {
   font-family: Poppins-Regular;
-  src: url('../assets/fonts/poppins/Poppins-Regular.ttf'); 
+  src: url('../assets/fonts/poppins/Poppins-Regular.ttf');
 }
 
 @font-face {
   font-family: Poppins-Bold;
-  src: url('../assets/fonts/poppins/Poppins-Bold.ttf'); 
+  src: url('../assets/fonts/poppins/Poppins-Bold.ttf');
 }
 
 @font-face {
   font-family: Poppins-Medium;
-  src: url('../assets/fonts/poppins/Poppins-Medium.ttf'); 
+  src: url('../assets/fonts/poppins/Poppins-Medium.ttf');
 }
 
 @font-face {
   font-family: Raleway-Regular;
-  src: url('../assets/fonts/raleway/Raleway-Regular.ttf'); 
+  src: url('../assets/fonts/raleway/Raleway-Regular.ttf');
 }
 
 @font-face {
   font-family: Raleway-Black;
-  src: url('../assets/fonts/raleway/Raleway-Black.ttf'); 
+  src: url('../assets/fonts/raleway/Raleway-Black.ttf');
 }
 
 @font-face {
   font-family: Raleway-SemiBold;
-  src: url('../assets/fonts/raleway/Raleway-SemiBold.ttf'); 
+  src: url('../assets/fonts/raleway/Raleway-SemiBold.ttf');
 }
 
 @font-face {
   font-family: Raleway-Bold;
-  src: url('../assets/fonts/raleway/Raleway-Bold.ttf'); 
+  src: url('../assets/fonts/raleway/Raleway-Bold.ttf');
 }
 
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url('../assets/fonts/montserrat/Montserrat-Regular.ttf');
+}
+
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url('../assets/fonts/montserrat/Montserrat-Bold.ttf');
+}
+
+@font-face {
+  font-family: Montserrat-Medium;
+  src: url('../assets/fonts/montserrat/Montserrat-Medium.ttf')
+}
+
+@font-face {
+  font-family: Montserrat-Italic;
+  src: url('../assets/fonts/montserrat/Montserrat-Italic.ttf');
+}
 
 /*//////////////////////////////////////////////////////////////////
 [ RESTYLE TAG ]*/
 
 * {
-	margin: 0px; 
-	padding: 0px; 
-	box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-body, html {
-	height: 100%;
-	font-family: Poppins-Regular, sans-serif;
+body,
+html {
+  height: 100%;
+  font-family: Montserrat-Regular;
 }
 
 /*---------------------------------------------*/
+
 a {
-	font-family: Poppins-Regular;
-	font-size: 14px;
-	line-height: 1.7;
-	color: #666666;
-	margin: 0px;
-	transition: all 0.4s;
-	-webkit-transition: all 0.4s;
+  font-family: Montserrat-Regular;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #666666;
+  margin: 0px;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
   -moz-transition: all 0.4s;
 }
 
 a:focus {
-	outline: none !important;
+  outline: none !important;
 }
 
 a:hover {
-	text-decoration: none;
+  text-decoration: none;
   color: #d33f8d;
 }
 
 /*---------------------------------------------*/
-h1,h2,h3,h4,h5,h6 {
-	margin: 0px;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
 }
 
 p {
-	font-family: Poppins-Regular;
-	font-size: 14px;
-	line-height: 1.7;
-	color: #666666;
-	margin: 0px;
+  font-family: Monserrat-Regular;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #666666;
+  margin: 0px;
 }
 
-ul, li {
-	margin: 0px;
-	list-style-type: none;
+ul,
+li {
+  margin: 0px;
+  list-style-type: none;
 }
-
 
 /*---------------------------------------------*/
+
 input {
-	outline: none;
-	border: none;
+  outline: none;
+  border: none;
 }
 
 textarea {
@@ -107,50 +131,96 @@ textarea {
   border: none;
 }
 
-textarea:focus, input:focus {
+textarea:focus,
+input:focus {
   border-color: transparent !important;
 }
 
-input:focus::-webkit-input-placeholder { color:transparent; }
-input:focus:-moz-placeholder { color:transparent; }
-input:focus::-moz-placeholder { color:transparent; }
-input:focus:-ms-input-placeholder { color:transparent; }
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
 
-textarea:focus::-webkit-input-placeholder { color:transparent; }
-textarea:focus:-moz-placeholder { color:transparent; }
-textarea:focus::-moz-placeholder { color:transparent; }
-textarea:focus:-ms-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder {
+  color: transparent;
+}
 
-input::-webkit-input-placeholder { color: #acacac; }
-input:-moz-placeholder { color: #acacac; }
-input::-moz-placeholder { color: #acacac; }
-input:-ms-input-placeholder { color: #acacac; }
+input:focus::-moz-placeholder {
+  color: transparent;
+}
 
-textarea::-webkit-input-placeholder { color: #acacac; }
-textarea:-moz-placeholder { color: #acacac; }
-textarea::-moz-placeholder { color: #acacac; }
-textarea:-ms-input-placeholder { color: #acacac; }
+input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+textarea:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+textarea:focus:-moz-placeholder {
+  color: transparent;
+}
+
+textarea:focus::-moz-placeholder {
+  color: transparent;
+}
+
+textarea:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+input::-webkit-input-placeholder {
+  color: #acacac;
+}
+
+input:-moz-placeholder {
+  color: #acacac;
+}
+
+input::-moz-placeholder {
+  color: #acacac;
+}
+
+input:-ms-input-placeholder {
+  color: #acacac;
+}
+
+textarea::-webkit-input-placeholder {
+  color: #acacac;
+}
+
+textarea:-moz-placeholder {
+  color: #acacac;
+}
+
+textarea::-moz-placeholder {
+  color: #acacac;
+}
+
+textarea:-ms-input-placeholder {
+  color: #acacac;
+}
 
 /*---------------------------------------------*/
+
 button {
-	outline: none !important;
-	border: none;
-	background: transparent;
+  outline: none !important;
+  border: none;
+  background: transparent;
 }
 
 button:hover {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 iframe {
-	border: none !important;
+  border: none !important;
 }
-
 
 /*//////////////////////////////////////////////////////////////////
 [ Utility ]*/
+
 .txt1 {
-  font-family: Raleway-Regular;
+  font-family: Montserrat-Regular;
   font-size: 16px;
   color: #999999;
   line-height: 1.4;
@@ -166,7 +236,6 @@ iframe {
   border-color: #d33f8d;
 }
 
-
 /*//////////////////////////////////////////////////////////////////
 [ login ]*/
 
@@ -176,7 +245,7 @@ iframe {
 }
 
 .container-login100 {
-  width: 100%;  
+  width: 100%;
   min-height: 100vh;
   display: -webkit-box;
   display: -webkit-flex;
@@ -213,13 +282,14 @@ iframe {
 
 .wrap-login100 {
   width: 450px;
-  /* background: whitesmoke; */
+  background: whitesmoke;
   border-radius: 3px;
   overflow: hidden;
 }
 
 /*------------------------------------------------------------------
 [  ]*/
+
 .login100-form {
   width: 100%;
   display: -webkit-box;
@@ -232,36 +302,32 @@ iframe {
 }
 
 .login100-form-title {
-  /* font-family: Verdana;
+  font-family: Montserrat-Regular;
   font-weight: bold;
   font-size: 30px;
   color: #111111;
   line-height: 1.2;
-  text-transform: capitalize; */
-  text-align: center;
-
-  width: 100%;
-  height: 100%;
-  /* height: 1px; */
-  display: block;
-  content:url("../assets/images/SPESys-Logo-250x150.png")
-}
-
-.login100-form-subtitle {
-  font-family: Verdana;
-  font-size: 15px;
-  color: #111111;
-  line-height: 1.2;
   text-transform: capitalize;
   text-align: center;
-
   width: 100%;
   height: 1px;
   display: block;
 }
 
+.login100-form-subtitle {
+  font-family: Montserrat-Regular;
+  font-size: 15px;
+  color: #111111;
+  line-height: 1.2;
+  text-transform: capitalize;
+  text-align: center;
+  width: 100%;
+  height: 1px;
+  display: block;
+}
 
 /*---------------------------------------------*/
+
 .wrap-input100 {
   position: relative;
   width: 100%;
@@ -269,11 +335,10 @@ iframe {
 }
 
 .input100 {
-  font-family: Raleway-SemiBold;
+  font-family: Montserrat-Regular;
   font-size: 18px;
   line-height: 1.2;
   color: #686868;
-
   display: block;
   width: 100%;
   background: #FFFFFF;
@@ -284,9 +349,9 @@ iframe {
   padding: 0 30px 0 65px;
 }
 
-
 /*------------------------------------------------------------------
 [ Focus ]*/
+
 .focus-input100 {
   display: block;
   position: absolute;
@@ -300,7 +365,7 @@ iframe {
   color: rgba(63, 78, 211, 0.6);
 }
 
-.input100:focus + .focus-input100 {
+.input100:focus+.focus-input100 {
   -webkit-animation: anim-shadow 0.5s ease-in-out forwards;
   animation: anim-shadow 0.5s ease-in-out forwards;
 }
@@ -322,7 +387,6 @@ iframe {
 .symbol-input100 {
   font-size: 24px;
   color: #999999;
-
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -338,20 +402,20 @@ iframe {
   padding-left: 23px;
   padding-bottom: 5px;
   pointer-events: none;
-
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
   -moz-transition: all 0.4s;
   transition: all 0.4s;
 }
 
-.input100:focus + .focus-input100 + .symbol-input100 {
+.input100:focus+.focus-input100+.symbol-input100 {
   color: #AAAAAA;
   padding-left: 18px;
 }
 
 /*------------------------------------------------------------------
 [ Button ]*/
+
 .container-login100-form-btn {
   width: 100%;
   display: -webkit-box;
@@ -364,12 +428,11 @@ iframe {
 }
 
 .login100-form-btn {
-  font-family: Raleway-Bold;
+  font-family: Montserrat-Regular;
   font-size: 16px;
   line-height: 1.5;
   color: #fff;
   text-transform: capitalize;
-
   width: 75%;
   height: 40px;
   border-radius: 3px;
@@ -382,7 +445,6 @@ iframe {
   justify-content: center;
   align-items: center;
   padding: 0 25px;
-
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
   -moz-transition: all 0.4s;
@@ -393,12 +455,9 @@ iframe {
   background: #333333;
 }
 
-.text-link
-{
+.text-link {
   text-align: center;
 }
-
-
 
 /*------------------------------------------------------------------
 [ Button sign in with ]*/
@@ -426,16 +485,13 @@ iframe {
   transform: translateY(-50%);
   right: 8px;
   pointer-events: none;
-
-  font-family: Raleway-SemiBold;
+  font-family: Montserrat-Regular;
   color: #c80000;
   font-size: 13px;
   line-height: 1.4;
   text-align: left;
-
   visibility: hidden;
   opacity: 0;
-
   -webkit-transition: opacity 0.4s;
   -o-transition: opacity 0.4s;
   -moz-transition: opacity 0.4s;
